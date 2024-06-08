@@ -1,0 +1,534 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    color: #737373;
+    letter-spacing: 0.5px;
+    line-height: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+  
+nav {
+    background: #1e3a8a;
+}
+  
+.heading-container {
+    display: flex;
+    flex-direction: row;
+}
+  
+nav img {
+    width: 50%;
+}
+  
+nav header {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 3.5vw;
+    align-content: center;
+}
+  
+nav .nav-links {
+    background: #6bd9f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+nav .nav-links a {
+    color: #1e3a8a;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.75vw;
+    padding: 0 20px;
+    width: fit-content;
+    flex-grow: 1;
+}
+  
+nav .nav-links a p {
+    padding: 15px 0;
+    height: 100%;
+    width: fit-content;
+    position: relative;
+    margin: auto;
+}
+  
+nav .nav-links a p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    height: 0.25vw;
+    width: 0%;
+    background: #1e3a8a;
+    transition: width .2s;
+}
+  
+nav .nav-links a:hover {
+    background: #a4ecff;
+}
+  
+nav .nav-links a:hover > p::after {
+    width: 100%;
+}
+  
+main {
+    padding: 20px;
+}
+  
+main header {
+    text-align: center;
+    font-weight: bold;
+    color: #525252;
+    font-size: 2.5vw;
+}
+  
+main p, main ul {
+    font-size: 2vw;
+}
+  
+.code-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0;
+}
+  
+.code-item {
+    border: 1px solid #1e3a8a;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 225px;
+}
+  
+.code-heading {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+    border-radius: 7px 7px 0px 0px;
+}
+  
+.code-sub-heading {
+    padding: 0 10px;
+    font-size: 1.75vw;
+    line-height: 2.5vw;
+}
+  
+.code {
+    padding: 0 10px 10px 10px;
+    margin-top: auto;
+}
+  
+code {
+    font-size: 1.75vw;
+    line-height: 2.5vw;
+    font-weight: bold;
+}
+  
+ .qualities-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 10px 10px;
+}
+  
+.qualities-list li {
+    display: flex;
+    flex-direction: column;
+}
+  
+.qualities-list li > p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #525252;
+    padding: 0;
+    margin: 0 0 3px 0 ;
+}
+  
+.progress-bar {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 4px;
+}
+  
+span {
+    width: 33px;
+    height: 20px;
+    background-color: lightgrey;
+}
+  
+.first {
+    border-radius: 10px 0 0 10px;
+}
+  
+.last {
+    border-radius: 0 10px 10px 0;
+}
+  
+.filled {
+    background-color: #1e3a8a;
+}
+  
+.extremes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+}
+  
+.extremes p {
+    font-size: 10px;
+    padding: 2px 10px;
+    margin: 0;
+}
+  
+a {
+    width: 100%;
+    height: fit-content;
+    cursor: pointer;
+    text-decoration: none;
+    color: #737373;
+}
+  
+a:hover {
+    text-decoration: underline;
+    color: #525252;
+}
+  
+.purchase-list:first-of-type {
+    padding: 15px 10px 10px 10px;
+}
+  
+.purchase-list:last-of-type {
+    padding: 15px 10px 10px 10px;
+}
+  
+.purchase-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 15px 10px 0px 10px;
+}
+  
+.purchase-list li {
+    display: flex;
+    flex-direction: column;
+    width: 125px;
+}
+  
+.img-container {
+    box-shadow: 0 0 10px grey;
+    padding: 10px 0 ;
+}
+  
+.purchase-list li img {
+    width: 125px;
+}
+  
+.caption {
+    text-align: center;
+    padding: 12px 0 0 0;
+    margin: 0 0 3px 0 ;
+    font-size: 1.75vw;
+    line-height: 2.5vw;
+}
+  
+.supplies-sub-heading {
+    font-weight: bold;
+    color: #1e3a8a;
+    font-size: 2.25vw;
+}
+  
+.training-sub-heading {
+    font-weight: bold;
+    color: #1e3a8a;
+    font-size: 2.25vw;
+}
+  
+.grooming-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+}
+  
+.grooming-list li {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+  
+.grooming-list li img {
+    height: 100px;
+    width: 100px;
+}
+  
+.grooming-list li > div {
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 3px solid #1e3a8a;
+}
+  
+.grooming-heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.25vw;
+    color: #525252;
+}
+  
+.spacing-bottom {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+  
+.spacing {
+    margin: 0;
+    padding: 0;
+}
+  
+.spacing-top {
+    margin-top: 0;
+    padding-top: 0;
+}
+  
+.ref-link {
+    text-decoration: underline;
+    color: #1e3a8a;
+}
+  
+.ref-link:hover {
+    color: #1e3a8a;
+}
+  
+@media (max-width: 600px) {
+    body, nav header {
+        line-height: 18px;
+    }
+  
+    main p, main ul, code {
+        font-size: 12px;
+    }
+  
+    nav header {
+        font-size: 21px;
+    }
+  
+    nav .nav-links a {
+        font-size: 10.5px;
+        padding: 0 10px;
+    }
+  
+    main header {
+        font-size: 15px;
+    }
+  
+    nav .nav-links a p::after {
+        height: 1.5px;
+    }
+  
+    nav .nav-links {
+        flex-wrap: wrap;
+    }
+  
+    .code-sub-heading, .caption {
+        font-size: 10.5px;
+        line-height: 15px;
+    }
+  
+    code {
+        font-size: 10.5px;
+        line-height: 15px;
+    }
+  
+    .supplies-sub-heading, .training-sub-heading, .grooming-heading {
+        font-size: 13.5px;
+    }
+}
+  
+@media (max-width: 450px) {
+    nav header {
+        font-size: 18px;
+    }
+  
+    .grooming-list {
+        gap: 10px;
+        padding: 10px 10px;
+        margin-bottom: 0;
+    }
+  
+    .grooming-list li {
+        flex-direction: column;
+    }
+  
+    .grooming-list li img {
+        height: 75px;
+        width: 75px;
+    }
+  
+    .grooming-list li > div {
+        padding-top: 10px;
+        margin-top: 20px;
+        border-top: 3px solid #1e3a8a;
+        border-left: none;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+}
+  
+@media (max-width: 375px) {
+    nav header {
+        font-size: 15px;
+    }
+}
+  
+@media (max-width: 325px) {
+    nav header {
+        font-size: 12px;
+    }
+}
+  
+@media (max-width: 680px) {
+    .code-item {
+        width: 175px;
+        height: 200px;
+    }
+}
+  
+@media (max-width: 877px) {
+    nav .nav-links a p {
+        padding: 8px 0;
+    }
+  
+    nav .nav-links a p::after {
+        bottom: 8px;
+    }
+}
+  
+@media (min-width: 800px) {
+    body, nav header {
+        line-height: 24px;
+    }
+  
+    main p, main ul, code {
+        font-size: 16px;
+    }
+  
+    nav .nav-links a {
+        font-size: 14px;
+    }
+  
+    main header {
+        font-size: 20px;
+    }
+  
+    nav .nav-links a p::after {
+        height: 2px;
+    }
+  
+    .code-sub-heading, .caption {
+        font-size: 14px;
+        line-height: 20px;
+    }
+  
+    code {
+        font-size: 14px;
+        line-height: 20px;
+    }
+  
+    .supplies-sub-heading, .training-sub-heading, .grooming-heading {
+        font-size: 18px;
+    }
+}
+  
+@media (max-width: 300px) {
+    body {
+        background-color: black;
+    }
+}
+  
+@media (min-width: 1100px) {
+    body {
+        display: block;
+    }
+  
+    .heading-container {
+        display: flex;
+        flex-direction: column;
+    }
+  
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 300px;
+        height: 100vh;
+    }
+  
+    nav img {
+        width: 100%;
+        order: 2
+    }
+  
+    nav header {
+        padding: 15px;
+        font-size: 24px;
+        align-content: center;
+        text-align: center;
+        order: 1
+    }
+  
+    nav .nav-links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        padding: 0;
+    }
+  
+    nav .nav-links a {
+        font-size: 15px;
+        height: 100%;
+        width: 100%;
+        align-content: center;
+        padding: 0px 20px;
+    }
+  
+    nav .nav-links a p {
+        margin: 0;
+    }
+  
+    main {
+        width: calc(100% - 300px);
+        float: right;
+    }
+
+    nav .nav-links a p::after {
+        top: 40px;
+    }
+}
